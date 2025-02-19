@@ -18,4 +18,11 @@ public class Pessoa {
     private String nome;
     private String email;
     private String fone;
+
+    public Pessoa(DadosCadastroPessoa dados) {
+        this.nome = dados.nome();
+        this.email = dados.email();
+        this.fone = dados.fone();
+
+    }
 }
